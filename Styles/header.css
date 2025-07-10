@@ -1,6 +1,6 @@
 .header-hero {
   position: relative;
-  height: 100vh;
+  
   & header {
     z-index: 1;
     position: absolute;
@@ -63,7 +63,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    top: 25%;
+    top: 30%;
     left: 50%;
     width: 50%;
     transform: translateX(-50%);
@@ -78,7 +78,6 @@
     & p {
       width: 90%;
       font: 500 1.25rem/1.4 var(--ff-base);
-      color: var(--text-body);
       opacity: 0;
       animation: fadeIn 1s ease forwards;
       animation-delay: 0.7s;
@@ -111,11 +110,4 @@
     opacity: 1;
   }
 }
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+
