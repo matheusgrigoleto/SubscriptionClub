@@ -1,4 +1,6 @@
 .hero-2 {
+  width: 100vw;
+  
   display: flex;
   gap: 2rem;
   flex-direction: column;
