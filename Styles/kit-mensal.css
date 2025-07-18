@@ -1,6 +1,6 @@
 .kit-mensal {
   width: 100%;
-  padding: 5rem 5rem 5rem;
+  padding: 5rem 5rem 5rem 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,7 +8,6 @@
 
   & .header-mensal {
     text-align: center;
-    padding-bottom: 10rem;
   }
 
   & .title-kit {
@@ -36,11 +35,21 @@
   position: relative;
   width: 100%;
   min-height: 100vh;
-  padding: 10rem;
+  padding: 10rem 10rem 20rem 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 3rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: var(--pink--low);
+    filter: blur(20rem);
+    z-index: -1;
+  }
 }
 
 .book-area {
