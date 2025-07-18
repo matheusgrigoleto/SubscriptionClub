@@ -123,6 +123,13 @@ header {
   background: var(--shape-hover);
   transform: translateX(-105%) translateY(10%) rotate(-10deg);
   z-index: 2;
+
+  & img:nth-child(1) {
+    rotate: -10deg;
+  }
+  & img:nth-child(2) {
+    rotate: 15deg;
+  }
 }
 
 .container:has(.cards-signature:hover) .img-card {
@@ -156,6 +163,13 @@ header {
   background: var(--shape-hover);
   transform: translateX(105%) translateY(10%) rotate(10deg);
   z-index: 2;
+
+    & img:nth-child(1) {
+    rotate: 10deg;
+  }
+  & img:nth-child(2) {
+    rotate: -15deg;
+  }
 }
 
 .container:has(.cards-signature:hover) .anual-card {
