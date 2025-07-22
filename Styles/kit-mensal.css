@@ -69,6 +69,8 @@
     position: absolute;
     top: 5%;
     left: 10%;
+    transform: translate(0, 0);
+    transition: transform 0.5s ease-in-out;
   }
 
   & .labelBook {
@@ -76,20 +78,25 @@
     top: 5%;
     left: 10%;
     font: 500 1rem/1.4 var(--ff-base);
+    transform: translate(0, 0);
+    transition: transform 0.5s ease-in-out;
   }
 }
 
-.kit-container:has(.book-area:hover) .arrow-book {
-  animation: inHover 1s ease both;
+.kit-container:hover .arrow-book {
+  transform: translate(-100%, -150%);
+  transition: transform 1s cubic-bezier(0.65, -0.6, 0.32, 1.6);
 }
 
-.kit-container:has(.book-area:hover) .labelBook {
-  animation: inHoverLabelBook 1s ease both;
+.kit-container:hover .labelBook {
+  transform: translate(-180%, -380%);
+  transition: transform 1s cubic-bezier(0.65, -0.6, 0.32, 1.6);
 }
 
 .broche-area {
   position: absolute;
-  
+  transform: translate(0, 0);
+  transition: transform 0.5s ease-in-out;
 
   & .arrow-broche {
     position: absolute;
@@ -113,13 +120,15 @@
   }
 }
 
-.kit-container:has(.book-area:hover) .broche-area {
-  animation: broche 1s ease both;
+.kit-container:hover .broche-area {
+  transform: translate(-123%, 100%);
+  transition: transform 0.8s cubic-bezier(0.65, -0.6, 0.32, 1.6);
 }
 
 .bookmark-area {
   position: absolute;
-  
+  transform: translate(0, 0);
+  transition: transform 0.5s ease-in-out;
 
   & .bookmark-yellow,
   .bookmark-purple {
@@ -135,10 +144,16 @@
     position: absolute;
     right: -5%;
     z-index: -1;
+    transform: translate(0, 0);
+    transition: transform 0.5s ease-in-out;
   }
 
   & .arrow-bookmark {
     position: absolute;
+    top: 60%;
+    transform: translateY(0);
+    transition: transform 0.5s cubic-bezier(0.65, -0.6, 0.32, 1.6);
+    transition-timing-function: ease-in-out;
     left: 52%;
     rotate: -5deg;
   }
@@ -147,86 +162,32 @@
     position: absolute;
     width: 15vw;
     font: 500 1rem/1.4 var(--ff-base);
+    top: 95%;
+    left: 10%;
+    transform: translate(0, 0);
+    transition: transform 0.5s cubic-bezier(0.65, -0.6, 0.32, 1.6);
+    transition-timing-function: ease-in-out;
   }
 }
 
-.kit-container:has(.book-area:hover) .labelBookmark {
-  top: 148%;
-  left: 10%;
+.kit-container:hover .labelBookmark {
+  transform: translate(10%, 16rem);
 }
 
-.kit-container:has(.book-area:hover) .arrow-bookmark {
-  top: 115%;
+.kit-container:hover .arrow-bookmark {
+  transform: translateY(175%);
 }
 
-.kit-container:has(.book-area:hover) .bookmark-yellow {
+.kit-container:hover .bookmark-yellow {
   rotate: 9deg;
 }
 
-.kit-container:has(.book-area:hover) .bookmark-purple {
-  animation: bookmarkPurple 1s ease both;
+.kit-container:hover .bookmark-purple {
+  transform: translate(55%, 20%) rotate(20deg);
+  transition: transform 0.8s cubic-bezier(0.65, -0.6, 0.32, 1.6);
 }
 
-.kit-container:has(.book-area:hover) .bookmark-area {
-  animation: bookmark 1s ease both;
-}
-
-@keyframes inHover {
-  0% {
-    transform: translateX(0) translateY(0);
-  }
-  25% {
-    transform: translateX(-110%) translateY(-150%);
-  }
-  100% {
-    transform: translateX(-100%) translateY(-150%);
-  }
-}
-
-@keyframes inHoverLabelBook {
-  0% {
-    transform: translateX(0) translateY(0);
-  }
-  25% {
-    transform: translateX(-190%) translateY(-380%);
-  }
-  100% {
-    transform: translateX(-180%) translateY(-380%);
-  }
-}
-
-@keyframes broche {
-  0% {
-    transform: translateX(0) translateY(0);
-  }
-  25% {
-    transform: translateX(-126%) translateY(100%);
-  }
-  100% {
-    transform: translateX(-123%) translateY(100%);
-  }
-}
-
-@keyframes bookmark {
-  0% {
-    transform: translateX(0) translateY(0);
-  }
-  25% {
-    transform: translateX(150%) translateY(-25%);
-  }
-  100% {
-    transform: translateX(145%) translateY(-25%);
-  }
-}
-
-@keyframes bookmarkPurple {
-  0% {
-    transform: translateX(0) translateY(0);
-  }
-  25% {
-    transform: translateX(55%) translateY(20%) rotate(20deg);
-  }
-  100% {
-    transform: translateX(55%) translateY(20%) rotate(20deg);
-  }
+.kit-container:hover .bookmark-area {
+  transform: translate(145%, -25%);
+  transition: transform 0.8s cubic-bezier(0.65, -0.6, 0.32, 1.6);
 }
