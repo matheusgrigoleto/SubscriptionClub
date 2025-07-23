@@ -13,9 +13,12 @@
     align-items: center;
     margin-inline: auto;
 
-    & img {
+    & .img-responsive {
+      background-image: url(/Assets/logo-horizontal.svg);
       width: 14.375rem;
       height: 3.625rem;
+      background-size: cover;
+      background-position: center;
     }
 
     & .btn-transform {
@@ -108,5 +111,42 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (width <= 26.875em) {
+  .header-hero {
+    & header {
+      width: 100%;
+      padding: 2rem 2rem;
+      & .img-responsive {
+        background-image: url(/Assets/logo-mobile.svg);
+        width: 3.62rem;
+        height: 2.28rem;
+      }
+    }
+
+    & .hero-1 {
+      width: 100%;
+      top: 25%;
+      left: 50%;
+      right: 50%;
+      & h1 {
+        font-size: 1.75rem;
+        width: 80%;
+      }
+      & p {
+        font-size: 0.875rem;
+      }
+    }
+
+    & .img-background {
+      height: 80vh;
+      width: 100%;
+      & img {
+        scale: 1;
+        object-fit: cover;
+      }
+    }
   }
 }

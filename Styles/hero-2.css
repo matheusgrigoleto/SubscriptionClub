@@ -1,6 +1,4 @@
 .hero-2 {
-  width: 100vw;
-  
   display: flex;
   gap: 2rem;
   flex-direction: column;
@@ -14,7 +12,9 @@
     width: 5rem;
     height: 5rem;
   }
-
+  & .book-surprise-mobile {
+    display: none;
+  }
   & p {
     font: 500 var(--text-sm) / 2rem var(--ff-base);
 
@@ -94,6 +94,70 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+  }
+}
+
+@media (width <= 26.875em) {
+  .hero-2 {
+    padding: 5rem 1.5rem;
+    width: 100%;
+    align-items: flex-end;
+
+    & .book-surprise-mobile {
+      display: block;
+      font: 500 1rem / 1.4rem var(--ff-base);
+    }
+    & p {
+      display: none;
+    }
+    & > img {
+      opacity: 1;
+      rotate: 20deg;
+      width: 2.5rem;
+      height: 2.5rem;
+      margin-bottom: -1rem;
+      margin-right: 3.5rem;
+
+      &:hover {
+        rotate: 20deg;
+        scale: 1;
+      }
+    }
+
+    & > div img:nth-child(1) {
+      opacity: 1;
+      rotate: -35deg;
+      width: 2.5rem;
+      height: 2.5rem;
+      margin-top: -2rem;
+      &:hover {
+        rotate: -35deg;
+        scale: 1;
+      }
+    }
+
+    & > div img:nth-child(2) {
+      opacity: 1;
+      rotate: 20deg;
+      width: 2.5rem;
+      height: 2.5rem;
+      margin-top: -1rem;
+
+      &:hover {
+        rotate: 20deg;
+        scale: 1;
+      }
+    }
+
+    &:hover {
+      & img[src*="spellbook"],
+      & img[src*="ouija"],
+      & img[src*="crystal"] {
+        animation: none;
+        animation-delay: none;
+        transition: none;
+      }
+    }
   }
 }
 
