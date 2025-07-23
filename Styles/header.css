@@ -14,11 +14,14 @@
     margin-inline: auto;
 
     & .img-responsive {
-      background-image: url(/Assets/logo-horizontal.svg);
       width: 14.375rem;
       height: 3.625rem;
       background-size: cover;
       background-position: center;
+    }
+
+    & .img-responsive-mobile {
+      display: none;
     }
 
     & .btn-transform {
@@ -120,7 +123,10 @@
       width: 100%;
       padding: 2rem 2rem;
       & .img-responsive {
-        background-image: url(/Assets/logo-mobile.svg);
+        display: none;
+      }
+      & .img-responsive-mobile {
+        display: block;
         width: 3.62rem;
         height: 2.28rem;
       }
