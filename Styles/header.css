@@ -14,7 +14,7 @@
     margin-inline: auto;
 
     & .img-responsive {
-      background-image: url(./Assets/logo-horizontal.svg);
+      background-image: url(../Assets/logo-horizontal.svg);
       width: 14.375rem;
       height: 3.625rem;
       background-size: cover;
@@ -120,7 +120,7 @@
       width: 100%;
       padding: 2rem 2rem;
       & .img-responsive {
-        background-image: url(./Assets/logo-mobile.svg);
+        background-image: url(../Assets/logo-mobile.svg);
         width: 3.62rem;
         height: 2.28rem;
       }
