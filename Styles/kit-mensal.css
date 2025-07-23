@@ -191,3 +191,174 @@
   transform: translate(145%, -25%);
   transition: transform 0.8s cubic-bezier(0.65, -0.6, 0.32, 1.6);
 }
+
+@media (width <= 26.875em) {
+  .kit-mensal {
+    padding: 2rem 1.5rem;
+
+    & .header-mensal {
+      & .title-kit {
+        gap: 0rem;
+
+        & img {
+          height: 2.5rem;
+          width: 2.5rem;
+        }
+
+        & h2 {
+          font-size: 1.5rem;
+        }
+      }
+      & p {
+        font-size: 0.875rem;
+      }
+    }
+  }
+  .kit-container {
+    position: relative;
+    width: 100%;
+    min-height: 55vh;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    left: -5%;
+  }
+  .book-area {
+    right: 5%;
+    & .book-img {
+      position: relative;
+      z-index: 20;
+      width: 9.82rem;
+      height: 12.98rem;
+    }
+
+    & .arrow-book {
+      position: relative;
+      width: 2.5rem;
+      height: 5rem;
+      bottom: 10.5rem;
+      left: 10%;
+      transform: none;
+      transition: none;
+    }
+
+    & .labelBook {
+      position: relative;
+      width: 6rem;
+      height: 1.5rem;
+      left: -15%;
+      font-size: 0.625rem;
+      transform: none;
+      transition: none;
+    }
+  }
+  .kit-container:hover .arrow-book {
+    transform: none;
+    transition: none;
+  }
+  .kit-container:hover .labelBook {
+    transform: none;
+    transition: none;
+  }
+  .broche-area {
+    transform: none;
+    transition: none;
+    bottom: 5%;
+    right: 62%;
+
+    & .arrow-broche {
+      position: absolute;
+      bottom: 77%;
+      right: 72%;
+      width: 2.2rem;
+      height: 2.67rem;
+    }
+
+    & .pin-img {
+      rotate: -8deg;
+      width: 4.68rem;
+      height: 5.33rem;
+    }
+
+    & .label {
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      font-size: 0.625rem;
+    }
+  }
+  .kit-container:hover .broche-area {
+    transform: none;
+    transition: none;
+  }
+  .bookmark-area {
+    position: absolute;
+    transform: none;
+    transition: none;
+    right: 17%;
+    bottom: 30%;
+
+    & .bookmark-yellow,
+    .bookmark-purple {
+      width: 3.61rem;
+      height: 11.27rem;
+    }
+
+    & .bookmark-yellow {
+      rotate: 9deg;
+    }
+
+    & .bookmark-purple {
+      position: absolute;
+      right: -65%;
+      top: 20%;
+      z-index: -1;
+      rotate: 20deg;
+      transform: none;
+      transition: none;
+    }
+
+    & .arrow-bookmark {
+      position: absolute;
+      top: 110%;
+      width: 3rem;
+      height: 3.16rem;
+      transform: none;
+      transition: none;
+      transition-timing-function: none;
+      left: 65%;
+      rotate: -5deg;
+    }
+
+    & .labelBookmark {
+      position: absolute;
+      width: 7rem;
+      font-size: 0.625rem;
+      top: 16.5rem;
+      left: -20%;
+      transform: none;
+      transition: none;
+      transition-timing-function: none;
+    }
+  }
+
+  .kit-container:hover .labelBookmark {
+    transform: none;
+  }
+
+  .kit-container:hover .arrow-bookmark {
+    transform: none;
+  }
+
+  .kit-container:hover .bookmark-yellow {
+    rotate: 9deg;
+  }
+
+  .kit-container:hover .bookmark-purple {
+    transform: none;
+    transition: none;
+  }
+
+  .kit-container:hover .bookmark-area {
+    transform: none;
+    transition: none;
+  }
+}
